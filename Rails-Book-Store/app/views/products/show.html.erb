@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="card" style="width: 18rem;">
+    <img class="card-img-top" src=<%= url_for @product.image %>>
+    <div class="card-body">
+      <h5 class="card-title"><%= @product.name %></h5>
+      <p class="card-text">Description :<%= @product.description %></p>
+      <p> Price : <%=p@product.price%>$</p>
+      <%= link_to "back", products_path, class: "btn btn-primary" %>
+    </div>
+  </div>
+</div>
